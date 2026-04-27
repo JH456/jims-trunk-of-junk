@@ -2,39 +2,43 @@
     <head>
         <style>
             body {
+                background-color:blue;
+                display: flex;
+                flex-direction:column;
+                margin: 0px;
+                font-family: 'arial';
+                justify-content: space-between;
             }
-            table, td {
-                border: 1px solid black;
-            };
             td {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: row;
-            };
+            }
             img {
                 display: block;
             }
+            .listing {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: space-between;
+                border: 1px solid black;
+            }
         </style>
     </head>
-    <body style="background-color:blue;display: flex;flex-direction:column;margin: 0px;font-family: 'arial';justify-content:space-between;">
+    <body>
         <div id="header" style="background-color: red;">
             <marquee><h1>If you want something, reach out however I told you when I sent you this link! Everything must go! Khajit has wares if you have coin! いらっしゃいませ</h1></marquee>
         </div>
         <div id="listings" style="background-color: red;margin:10%;">
-            <table>
-                <tr>
-                    <td><img src="./res/listing_images/bass.jpg" width="50%"/></td>
-                    <td>
-                        <h1>Bass Guitar with Case</h1>
-                        <p>One available, make me an offer. Must take both the guitar and the case. Condition is good. It can hook up to an amp, but I've never tried, so no guarantees on if that works. A little buzzy, but it's a good starter instrument.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>meme</td>
-                    <td>mememememememememem</td>
-                </tr>
-            </table>
+            <div class="listing">
+                <img src="./res/listing_images/bass.jpg" width="50%"/>
+                <div class="description">
+                    <h1>Bass Guitar with Case</h1>
+                    <p>One available, make me an offer. Must take both the guitar and the case. Condition is good. It can hook up to an amp, but I've never tried, so no guarantees on if that works. A little buzzy, but it's a good starter instrument.</p>
+                </div>
+            </div>
         </div>
     </body>
 </html>
