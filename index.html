@@ -3,6 +3,7 @@
         <style>
             body {
                 background-color:blue;
+                background-image: url(./res/bg.png);
                 display: flex;
                 flex-direction:column;
                 margin: 0px;
@@ -19,6 +20,7 @@
                 max-width: 40%;
                 height: auto;
                 margin: 5%;
+                box-shadow: 10px 10px 10px 1px black;
             }
             .listing {
                 display: flex;
@@ -30,13 +32,27 @@
             .description {
                 margin: 5%;
             }
+            #header {
+                position:sticky;
+                top: 0;
+                border: 1px solid black;
+                background-image: url(./res/bgred.png);
+            }
+            #listings {
+                background-image: url(./res/bgred.png);
+                margin: 10%;
+                box-shadow: 0px 0px 40px 20px cyan;
+            }
+            p {
+                font-size: 16pt;
+            }
         </style>
     </head>
     <body>
-        <div id="header" style="background-color: red;">
-            <marquee><h1>If you want something, reach out however I told you when I sent you this link! Everything must go! Khajit has wares if you have coin! いらっしゃいませ ! Bem-vindo! Welcome!</h1></marquee>
+        <div id="header">
+            <marquee><h1>Welcome to my web zone! Most stuff is free to a good home! If you want something, reach out however I told you when I sent you this link! Dangerous deals require adult pickup! Everything must go! Khajit has wares if you have coin! いらっしゃいませ ! Bem-vindo! Welcome! No cookies here! Static site! Super private!</h1></marquee>
         </div>
-        <div id="listings" style="background-color: red;margin:10%;">
+        <div id="listings">
             <div class="listing">
                 <img src="./res/listing_images/bass.jpg"/>
                 <div class="description">
