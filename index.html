@@ -1,6 +1,15 @@
 <html>
     <head>
         <style>
+            .sold {
+                background: url(res/sold.png);
+            }
+            .sold.listing img {
+                opacity: .5;
+            }
+            .sold.listing .description {
+                opacity: .5;
+            }
             body {
                 background-color:blue;
                 background-image: url(./res/bg.png);
@@ -46,6 +55,7 @@
                 top: 0;
                 border: 1px solid black;
                 background-image: url(./res/bgred.png);
+                z-index: 100000000; /* Needs to be a high number because of our usage of opacity for sold items and https://stackoverflow.com/questions/21876228/how-does-opacity-affect-element-order */
             }
             #listings {
                 background-image: url(./res/bgred.png);
@@ -54,15 +64,6 @@
             }
             p {
                 font-size: 16pt;
-            }
-            .sold {
-                background: url(res/sold.png)
-            }
-            .sold img {
-                opacity: .5;
-            }
-            .sold .description {
-                opacity: .5;
             }
         </style>
     </head>
